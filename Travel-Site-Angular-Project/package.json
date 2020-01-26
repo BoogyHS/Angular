@@ -1,5 +1,5 @@
 {
-  "name": "travel",
+  "name": "travel-site-angular-project",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -12,7 +12,7 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "~8.2.14",
-    "@angular/cdk": "^8.2.3",
+    "@angular/cdk": "~8.2.3",
     "@angular/common": "~8.2.14",
     "@angular/compiler": "~8.2.14",
     "@angular/core": "~8.2.14",
@@ -27,8 +27,8 @@
     "zone.js": "~0.9.1"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~0.803.22",
-    "@angular/cli": "~8.3.22",
+    "@angular-devkit/build-angular": "~0.803.23",
+    "@angular/cli": "~8.3.23",
     "@angular/compiler-cli": "~8.2.14",
     "@angular/language-service": "~8.2.14",
     "@types/node": "~8.9.4",
