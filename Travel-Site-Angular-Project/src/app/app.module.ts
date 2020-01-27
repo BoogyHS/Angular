@@ -4,19 +4,18 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatMenuComponent } from './mat-menu/mat-menu.component';
-import {MatMenuModule} from '@angular/material/menu';
+import { MaterialModule } from '../app/material/material.module'
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    MatMenuComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatMenuModule
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
