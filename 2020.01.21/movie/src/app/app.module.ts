@@ -8,18 +8,27 @@ import { MoviesService } from './service/movies.service';
 import { NavComponent } from './nav/nav.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MovieComponent } from './movie/movie.component';
+import { RouterModule, Route } from '@angular/router';
+import { SelectedMovieComponent } from './selected-movie/selected-movie.component';
+import { FormsModule } from '@angular/forms'
 
 @NgModule({
   declarations: [
     AppComponent,
     MoviesComponent,
     NavComponent,
-    MovieComponent
+    MovieComponent,
+    SelectedMovieComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    RouterModule.forRoot([
+      { path: '', component: MoviesComponent },
+      { path: 'movie/:id', component: SelectedMovieComponent },
+    ])
   ],
   providers: [MoviesService],
   bootstrap: [AppComponent]
